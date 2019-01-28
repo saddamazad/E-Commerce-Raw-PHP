@@ -1,0 +1,1 @@
+<h2>This area is only for authorized users</h2>
