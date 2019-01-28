@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Enalamode Shopping Cart</title>
+		<link rel="stylesheet" href="resources/smoothgallery/css/jd.gallery.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+		<link type="text/css" rel="stylesheet" href="resources/dropdown_menu/ddsmoothmenu-v.css" />
+		<script type="text/javascript" src="resources/dropdown_menu/jquery.min.js"></script>
+		<script type="text/javascript" src="resources/dropdown_menu/ddsmoothmenu.js"></script>
+		<script type="text/javascript">
+			ddsmoothmenu.init({
+			mainmenuid: "siteCategories", //Menu DIV id		  ++++++++++ #### +++++++++++++
+			orientation: 'v', //Horizontal or vertical menu: Set to "h" or "v"
+			classname: 'ddsmoothmenu-v', //class added to menu's outer DIV
+			//customtheme: ["#804000", "#482400"],
+			contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+			})
+		</script>
+		<script type="text/javascript" src="resources/smoothgallery/scripts/mootools-1.2.1-core-yc.js"></script>
+		<script type="text/javascript" src="resources/smoothgallery/scripts/mootools-1.2-more.js"></script>
+		<script type="text/javascript" src="resources/smoothgallery/scripts/jd.gallery.js"></script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<a href="#"><div id="siteLogo" class="fLeft"></div></a>
+			<div id="topMenu" class="fRight">
+				<ul>
+					<li><a href="#">Your Account<br />(<span>Log in</span>)</a></li>
+					<li><a class="last" href="#"><span>Sign Up !</span></a></li>
+				</ul>
+				<div class="cLeft"></div>
+			</div>
+			<div class="cBoth"></div>
+			<div id="siteNavigation">
+				<ul>
+					<li><a class="current" href="#">Home</a></li>
+					<li><a href="#">Showroom</a></li>
+					<li><a href="#">My Cart</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<div class="cLeft"></div>
+			</div>
+			
+			<div id="siteLeftBar" class="fLeft">
+				<form action="" id="searchForm" name="searchForm" enctype="multipart/form-data" method="post">
+					<fieldset>
+						<input type="text" id="sf_keywordTxt" name="sf_keywordTxt" value="search ..." class="inputController fLeft" />
+						<input type="submit" id="sf_submitBtn" name="sf_submitBtn" value="" class="searchBtn" />
+					</fieldset>
+				</form>
+				<div id="siteCategories" class="ddsmoothmenu-v">
+					<ul>
+						<li><a href="">Featwear</a>
+							<ul>
+								<li><a href="#">Women</a>
+									<ul>
+										<li><a href="#">Flat</a></li>
+										<li><a href="#">Heel</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Men</a>
+									<ul>
+										<li><a href="#">Casual</a></li>
+										<li><a href="#">Leather</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="">Accessories</a>
+							<ul>
+								<li><a href="#">Fabric</a></li>
+								<li><a href="#">Polyurethane</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="siteMainContainer" class="fLeft">
+				<div id="banner">
+					<script type="text/javascript">
+						function startGallery() {
+							var myGallery = new gallery($('myGallery'), {
+								timed: true
+							});
+						}
+						window.addEvent('domready',startGallery);
+					</script>
+					<div class="content">
+						<div id="myGallery">
+							<div class="imageElement">
+								<h3></h3>
+								<p></p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="resources/smoothgallery/images/brugges2006/1.jpg" class="full" />
+								<img src="resources/smoothgallery/images/brugges2006/1-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3></h3>
+								<p></p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="resources/smoothgallery/images/brugges2006/2.jpg" class="full" />
+								<img src="resources/smoothgallery/images/brugges2006/2-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3></h3>
+								<p></p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="resources/smoothgallery/images/brugges2006/3.jpg" class="full" />
+								<img src="resources/smoothgallery/images/brugges2006/3-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3></h3>
+								<p></p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="resources/smoothgallery/images/brugges2006/4.jpg" class="full" />
+								<img src="resources/smoothgallery/images/brugges2006/4-mini.jpg" class="thumbnail" />
+							</div>
+							<div class="imageElement">
+								<h3></h3>
+								<p></p>
+								<a href="#" title="open image" class="open"></a>
+								<img src="resources/smoothgallery/images/brugges2006/5.jpg" class="full" />
+								<img src="resources/smoothgallery/images/brugges2006/5-mini.jpg" class="thumbnail" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum tincidunt metus, vitae luctus erat interdum nec. Quisque fermentum vehicula risus at pharetra. Aenean ac ipsum tellus, at porttitor urna. Cras sed magna in eros posuere sagittis at ut sem. Fusce fermentum semper lectus et tristique. 
+				</p>
+			</div>
+			<div class="cLeft"></div>
+			
+			<div id="footer">
+				<h4 class="fLeft">Follow Us : </h4>
+				<ul class="fLeft">
+					<li><a href="#"><img src="images/icon_facebook.jpg" alt="Facebook" /></a></li>
+					<li><a href="#"><img src="images/icon_twitter.jpg" alt="Twitter" /></a></li>
+					<li><a href="#"><img src="images/icon_rss.jpg" alt="RSS" /></a></li>
+				</ul>
+				<p class="fRight">copyright &copy; 2012 Enalamode. All right reserved</p>
+				<div class="cBoth"></div>
+			</div>
+		</div>
+	</body>
+</html>

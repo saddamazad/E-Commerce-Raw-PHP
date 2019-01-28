@@ -1,0 +1,20 @@
+.ddsmoothmenu-v ul{
+}
+ 
+.ddsmoothmenu-v ul li{
+	position: relative;
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul{
+	position: absolute;
+	width: 150px; /*Sub Menu Items width */
+	top: 0;
+	font-weight: normal;
+	visibility: hidden;
+}
+ 
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }
+/* End */
